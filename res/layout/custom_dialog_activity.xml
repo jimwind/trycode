@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2008 The Android Open Source Project
+<!--
+     Copyright (C) 2008 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,11 +15,27 @@
      limitations under the License.
 -->
 
-<!-- Demonstrates an activity with a custom dialog theme.
-     See corresponding Java code com.android.sdk.app.CustomDialogActivity.java. -->
+
+<!--
+     Demonstrates an activity with a custom dialog theme.
+     See corresponding Java code com.android.sdk.app.CustomDialogActivity.java.
+-->
+
 
 <!-- This screen consists of a single text field that displays some text. -->
-<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/text"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:gravity="center_vertical|center_horizontal"
-    android:text="@string/hello_world"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#ffff00ff">
+
+    <TextView        
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"        
+        android:clickable="true"
+        android:text="@string/hello_world"
+        android:textColor="#ffffffff" />
+
+</LinearLayout>
