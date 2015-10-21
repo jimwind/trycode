@@ -41,7 +41,13 @@ public class MainActivity extends Activity {
 				LinearLayout layout = (LinearLayout) mActivity
 						.getLayoutInflater().inflate(R.layout.custom_dialog_activity, null);
 				new AlertDialog.Builder(mActivity)
-				.setView(layout)
+				.setNeutralButton("删除此作业", new DialogInterface.OnClickListener(){
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+
+					}
+				})
 				.show();
 			}
 
