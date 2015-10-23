@@ -27,7 +27,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_gravity="center_vertical"
-    android:background="#ffff00ff">
+    android:background="#ffffffff">
 
     <TextView        
         android:id="@+id/text"
@@ -36,6 +36,6 @@
         android:layout_gravity="center_vertical"        
         android:clickable="true"
         android:text="@string/hello_world"
-        android:textColor="#ffffffff" />
+        android:textColor="#ff000000" />
 
 </LinearLayout>
