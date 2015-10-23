@@ -28,6 +28,8 @@
             <intent-filter>
             </intent-filter>
         </activity>
+        <activity android:name="com.example.activity.ArrangedHomeworks">
+        </activity>
     </application>
 
 </manifest>

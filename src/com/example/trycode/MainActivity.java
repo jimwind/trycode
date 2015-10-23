@@ -7,6 +7,7 @@ import com.example.view.UPDialog;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Resources.Theme;
 import android.os.Bundle;
 import android.text.Html;
@@ -24,6 +25,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.activity.ArrangedHomeworks;
 import com.example.trycode.R;
 
 public class MainActivity extends Activity {
@@ -122,7 +125,7 @@ public class MainActivity extends Activity {
 				 */
 				break;
 			case R.id.try_html: {
-				FrameLayout layout = (FrameLayout) mActivity
+				LinearLayout layout = (LinearLayout) mActivity
 						.getLayoutInflater().inflate(R.layout.up_dialog,
 								null);
 
@@ -133,7 +136,12 @@ public class MainActivity extends Activity {
 				dialog.show();
 			}
 				break;
-			case R.id.try_popup_window: {
+			case R.id.try_popup_window:
+			{
+				Intent intent = new Intent(MainActivity.this, ArrangedHomeworks.class);
+				startActivity(intent);
+			}	
+			/*{
 				// 实例化SelectPicPopupWindow
 				menuWindow = new SelectPicPopupWindow(MainActivity.this,
 						itemsOnClick);
@@ -141,7 +149,7 @@ public class MainActivity extends Activity {
 				menuWindow.showAtLocation(
 						MainActivity.this.findViewById(R.id.main),
 						Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0); // 设置layout在PopupWindow中显示的位置
-			}
+			}*/
 				break;
 			default:
 				break;
